@@ -23,7 +23,7 @@ h4 {
 header {
   padding-top: var(--page-padding);
   width: var(--header-width);
-  background: linear-gradient(#b6dcfe 5%, #3ba3fc 10%);
+  background: linear-gradient(#b6dcfe 175px, #3aa1fb 350px);
   flex-shrink: 0;
 }
 
@@ -93,7 +93,7 @@ hr {
 aside {
   padding-top: var(--page-padding-top);
   width: var(--aside-width);
-  background: linear-gradient(#b6dcfe 5%, #3ba3fc 10%);
+  background: linear-gradient(#b6dcfe 175px, #3aa1fb 350px);
   flex-shrink: 0;
 }
 
