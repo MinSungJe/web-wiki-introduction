@@ -69,6 +69,10 @@ article {
   flex-flow: column;
 }
 
+section > article {
+  margin-bottom: 30px;
+}
+
 div.thumbnail {
   display: flex;
   justify-content: center;

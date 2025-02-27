@@ -17,3 +17,25 @@ input[type='text'] {
   height: 90%;
   border: none;
 }
+
+.comment-writing-container {
+  margin-bottom: 24px;
+}
+
+.comment-list > * {
+  margin-bottom: 8px;
+  border: 1px solid #e9e9e9;
+  padding: 10px 16px 18px 16px;
+}
+
+.comment-list > *:last-child {
+  margin-bottom: 0px;
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
