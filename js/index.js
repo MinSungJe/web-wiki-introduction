@@ -34,3 +34,21 @@ enterButton.addEventListener('click', () => {
   alert('댓글이 등록되었습니다.');
   document.querySelector('#comment-input').value = '';
 });
+
+const links = document.querySelectorAll('a[href^="#"]');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+
+  links.forEach((link) => (link.style.fontWeight = 'unset'));
+
+  if (scrollY >= 119 && scrollY < 482) {
+    links[0].style.fontWeight = 'bold';
+  } else if (scrollY >= 482 && scrollY < 1421) {
+    links[1].style.fontWeight = 'bold';
+  } else if (scrollY >= 1421 && scrollY < 2736) {
+    links[2].style.fontWeight = 'bold';
+  } else if (scrollY >= 2736) {
+    links[3].style.fontWeight = 'bold';
+  }
+});
