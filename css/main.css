@@ -1,13 +1,10 @@
-@import "./reset.css";
-@import "./common.css";
-@import "./wiki-layout.css";
-@import "./gallery.css";
+@import './reset.css';
+@import './common.css';
+@import './wiki-layout.css';
+@import './gallery.css';
+@import './button.css';
+@import './comment.css';
 
 #app {
-    width: 100vw;
-}
-
-form textarea {
-    width: 100%;
-    resize: none;
+  width: 100vw;
 }

@@ -1,0 +1,19 @@
+fieldset {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.comment-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/comment-author-icon.png);
+  background-size: cover;
+  margin-right: 10px;
+}
+
+input[type='text'] {
+  flex-grow: 1;
+  height: 90%;
+  border: none;
+}

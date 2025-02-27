@@ -1,0 +1,14 @@
+button {
+  width: 70px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+}
+
+button[type='button'] {
+  background-color: #d7f9f6;
+}
+
+button[type='reset'] {
+  background-color: #d8d8d8;
+}
