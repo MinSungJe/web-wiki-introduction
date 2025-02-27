@@ -4,6 +4,7 @@
 @import './gallery.css';
 @import './button.css';
 @import './comment.css';
+@import './animation.css';
 
 #app {
   width: 100vw;

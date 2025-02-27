@@ -52,3 +52,19 @@ window.addEventListener('scroll', () => {
     links[3].style.fontWeight = 'bold';
   }
 });
+
+const profileContainer = document.querySelector('.profile-container');
+let imageClickCount = 0;
+profileContainer.addEventListener('click', () => {
+  imageClickCount += 1;
+  console.log(imageClickCount);
+
+  if (imageClickCount >= 30) {
+    setTimeout(() => {
+      profileContainer.style.animation = 'none';
+    }, 5100);
+
+    profileContainer.style.animation = 'flipImage 5s';
+    imageClickCount = 0;
+  }
+});

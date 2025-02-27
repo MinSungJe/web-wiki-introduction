@@ -23,7 +23,7 @@ h4 {
 header {
   padding-top: var(--page-padding);
   width: var(--header-width);
-  background: linear-gradient(#b6dcfe 175px, #3aa1fb 350px);
+  background: linear-gradient(#b6dcfe 175px, #3aa2fc 350px);
   flex-shrink: 0;
 }
 
@@ -93,7 +93,7 @@ hr {
 aside {
   padding-top: var(--page-padding-top);
   width: var(--aside-width);
-  background: linear-gradient(#b6dcfe 175px, #3aa1fb 350px);
+  background: linear-gradient(#b6dcfe 175px, #3aa2fc 350px);
   flex-shrink: 0;
 }
 
@@ -101,14 +101,36 @@ aside h2 {
   font-size: 1.7rem;
 }
 
-.profile-image {
-  background-image: url('../images/flamingo.png');
-  background-size: 100%;
-  background-position: center 100%;
+.profile-container {
+  position: relative;
   width: var(--aside-width);
   height: var(--aside-width);
+  transform-style: preserve-3d;
+}
 
+.profile-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('../images/flamingo.png');
+  background-size: cover;
+  background-position: center 100%;
+  backface-visibility: hidden;
   text-indent: -1000rem;
+  z-index: 1;
+}
+
+.profile-back {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+  background-image: url('../images/doflamingo.jpg');
+  background-size: cover;
+  background-position: center 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 aside.right-sidebar nav {
