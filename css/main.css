@@ -1,6 +1,11 @@
 @import "./reset.css";
 @import "./common.css";
 @import "./wiki-layout.css";
+@import "./gallery.css";
+
+#app {
+    width: 100vw;
+}
 
 form textarea {
     width: 100%;
