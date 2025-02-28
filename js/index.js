@@ -39,6 +39,8 @@ const links = document.querySelectorAll('a[href^="#"]');
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
+  const nav = document.querySelector('aside.right-sidebar nav');
+  const links = document.querySelectorAll('ol.contents li a');
 
   links.forEach((link) => (link.style.fontWeight = 'unset'));
 
@@ -50,6 +52,18 @@ window.addEventListener('scroll', () => {
     links[2].style.fontWeight = 'bold';
   } else if (scrollY >= 2736) {
     links[3].style.fontWeight = 'bold';
+  }
+
+  if (scrollY >= 1421) {
+    nav.style.color = '#e2e2e2';
+    links.forEach((link) => {
+      link.style.color = '#e2e2e2';
+    });
+  } else {
+    nav.style.color = '#333';
+    links.forEach((link) => {
+      link.style.color = '#333';
+    });
   }
 });
 

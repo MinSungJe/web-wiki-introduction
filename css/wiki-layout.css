@@ -23,7 +23,7 @@ h4 {
 header {
   padding-top: var(--page-padding);
   width: var(--header-width);
-  background: linear-gradient(#b6dcfe 175px, #3aa2fc 350px);
+  background: linear-gradient(#b6dcfe 175px, #3aa2fc 350px, #2a3159 100%);
   flex-shrink: 0;
 }
 
@@ -93,7 +93,7 @@ hr {
 aside {
   padding-top: var(--page-padding-top);
   width: var(--aside-width);
-  background: linear-gradient(#b6dcfe 175px, #3aa2fc 350px);
+  background: linear-gradient(#b6dcfe 175px, #3aa2fc 350px, #2a3159 100%);
   flex-shrink: 0;
 }
 
@@ -136,6 +136,7 @@ aside h2 {
 aside.right-sidebar nav {
   position: fixed;
   padding: var(--right-sidebar-padding);
+  transition: color 0.3s;
 }
 
 ol.contents {
@@ -150,6 +151,7 @@ ol.contents li:not(:last-child) {
 ol.contents li a {
   text-decoration: none;
   color: var(--font-default-color);
+  transition: color 0.3s;
 }
 
 footer {
